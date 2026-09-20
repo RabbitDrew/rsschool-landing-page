@@ -13,7 +13,7 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     filename: "[name].[contenthash].js",
     clean: true,
-    publicPath: "./",
+    publicPath: "/rsschool-landing-page/src/"
     //assetModuleFilename: 'assets/images/[name][ext]',
   },
   devServer: {
