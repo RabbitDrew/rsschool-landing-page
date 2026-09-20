@@ -15,7 +15,7 @@ module.exports = {
     //assetModuleFilename: 'assets/images/[name][ext]',
   },
   devServer: {
-    static: path.resolve(__dirname, 'dist'),
+    static: path.resolve(__dirname, 'src'),
     port: 2000,
     open: true,
     hot: true,
@@ -36,12 +36,13 @@ module.exports = {
       chunks: ['catalog'], 
     }),
     /*palgin to copy resurses*/
+    
     new CopyWebpackPlugin({
       patterns: [
         {from: 'src/assets', to: 'assets'}, 
       ],
     }),
-
+    
   ],
   module: {
     rules: [
@@ -49,7 +50,7 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         use: 'babel-loader',
-        
+        type: 'javascript/auto'
       },
       {
         test: /\.css$/i,
