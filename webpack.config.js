@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require("path");
 
 module.exports = {
@@ -35,6 +36,9 @@ module.exports = {
       template: path.resolve(__dirname, "src/catalog.html"),
       filename: "catalog.html",
       chunks: ["catalog"],
+    }),
+    new MiniCssExtractPlugin({
+      filename: "[name].[contenthash].css",
     }),
     /*palgin to copy resurses*/
 
