@@ -12,7 +12,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].[contenthash].js', 
     clean: true,
-    publicPath: ''
+
     //assetModuleFilename: 'assets/images/[name][ext]',
   },
   devServer: {
