@@ -1,42 +1,84 @@
 .page-header {
-    max-width: 1440px;
-    width: 100%;
+  max-width: 1440px;
+  width: 100%;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-    padding: 20px 40px;
+  padding: 20px 40px;
 }
 
 /*header logo*/
 .header-logo {
-    max-width: 100px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative; 
+  max-width: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 /*header nav*/
 .header-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    .nav-item {
-        .header-item-title {
-            font-size: 16px;
-            font-weight: 600;
-            color: var(--font-color);
-        }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  transform: translateX(-22px); //!Warning
+  .nav-item {
+    .header-item-title {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 150%;
+      letter-spacing: 5%; //!Warning
+      color: var(--font-color);
     }
+  }
 }
 
 /*header settings*/
 
 .header-setting {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  //theme switcher
+  .setting-mode {
+    width: 88px;
+    height: 44px;
+    gap: 5px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #c1b6ad;
+    border-radius: 100px;
+    gap: 23px;
+    position: relative;
+    cursor: pointer;
 
+    .mode-pointer {
+      width: 36px;
+      height: 36px;
+      border-radius: 100%;
+      background-color: #b0907a;
+      position: absolute;
+      z-index: -1;
+      top: 2px;
+      left: 2px;
+    }
+  }
+  //menu
+  .setting-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    .menu-title {
+        font-size:  16px;
+        font-weight: 600;
+    }
+
+  }
 }
