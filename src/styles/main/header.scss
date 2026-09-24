@@ -25,13 +25,13 @@
   justify-content: center;
   align-items: center;
   gap: 40px;
-  transform: translateX(-22px); //!Warning
+  transform: translateX(-20px); //!Warning
   .nav-item {
     .header-item-title {
       font-size: 16px;
-      font-weight: 600;
+      font-weight: 400;
       line-height: 150%;
-      letter-spacing: 5%; //!Warning
+      letter-spacing: 4%; //!Warning
       color: var(--font-color);
     }
   }
@@ -79,6 +79,5 @@
         font-size:  16px;
         font-weight: 600;
     }
-
   }
 }
