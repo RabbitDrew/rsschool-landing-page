@@ -1,0 +1,108 @@
+.page-footer {
+  max-width: 1440px;
+  width: 100%;
+  padding: 0 40px 0 40px;
+  .page-footer--wrapper {
+    width: 100%;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    background-color: #665f55;
+    border-radius: 40px;
+  }
+}
+/*brand info*/
+.footer-brand-info {
+  max-width: 530px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 40px;
+  //brand info title
+
+  //title
+  .brand-info-title {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 125%;
+    letter-spacing: 3%;
+    color: #e1d4c9;
+    .brand-info-title--accent {
+      color: #b0907a;
+    }
+  }
+
+  .brand-info-social--wrapper {
+    max-width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 12px;
+    .brand-info-social {
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #c1b6ad;
+      border-radius: 100px;
+      cursor: pointer;
+      transition: all .2s ease;
+    }
+
+     .brand-info-social:hover {
+      background-color: #e1d4c9; 
+      border-color: #e1d4c9;
+
+      // Правильно обращаемся к путям иконок при наведении на кнопку
+      path {
+        stroke: #403F3D !important; // Меняет контур на тёмно-коричневый
+      }
+    }
+   
+  }
+}
+
+/*brand contact*/
+.footer-contact {
+  max-width: 530px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 40px;
+
+  .footer-contact-tilte {
+   font-size: 24px;
+    font-weight: 600;
+    line-height: 125%;
+    color: #E1D4C9;
+  }
+
+  .footer-contact-list {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+
+    .footer-contact-list-item {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 8px;
+        .footer-contact-list-item-title {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 150%;
+            letter-spacing: 1%;
+            color: #E1D4C9;
+        }
+    }
+  }
+}
